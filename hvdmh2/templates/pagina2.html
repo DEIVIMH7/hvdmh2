@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Estudios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <!-- Pa', aquí ponemos todo lo que ha estudiado el socio -->
+    <h1>Estudios</h1>
+
+    <div class="info-box">
+        <p><strong>Primaria:</strong> Colegio General Santander - Bga.</p>
+        <p><strong>Secundaria:</strong> Colegio Nacional Universitario - Vélez, Bachiller Académico (1996)</p>
+        <p><strong>Tecnólogo:</strong> Salud Ocupacional</p>
+        <p><strong>Cursos:</strong> Inteligencia Artificial Básico</p>
+    </div>
+
+    <!-- Menú pa’ saltar entre páginas sin enredo -->
+    <div class="menu">
+        <select onchange="location = this.value;">
+            <option value="/">Información</option>
+            <option value="/estudios" selected>Estudios</option>
+            <option value="/experiencia">Experiencia</option>
+            <option value="/referencias">Referencias</option>
+        </select>
+    </div>
+
+</body>
+</html>

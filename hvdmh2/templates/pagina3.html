@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiencia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <!-- Perrito, aquí va todo lo que ha trabajado el socio -->
+    <h1>Experiencia</h1>
+
+    <div class="info-box">
+        <ol>
+            <li>Logística LIATLECESAR</li>
+            <li>Seguridad Moví de Colombia</li>
+            <li>INPEC</li>
+        </ol>
+    </div>
+
+    <!-- Menú pa’ moverse entre páginas -->
+    <div class="menu">
+        <select onchange="location = this.value;">
+            <option value="/">Información</option>
+            <option value="/estudios">Estudios</option>
+            <option value="/experiencia" selected>Experiencia</option>
+            <option value="/referencias">Referencias</option>
+        </select>
+    </div>
+
+</body>
+</html>

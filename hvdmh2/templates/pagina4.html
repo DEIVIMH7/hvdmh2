@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Referencias</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <!-- Socio, aquí dejamos quién puede dar buena referencia del pana -->
+    <h1>Referencias</h1>
+
+    <div class="info-box">
+        <h3>Referencias familiares:</h3>
+        <p><strong>Nombre:</strong> Jaime Antonio Monsalve Herrera<br>
+        <strong>Parentesco:</strong> Hermano<br>
+        <strong>Contacto:</strong> 3115608094</p>
+
+        <p><strong>Nombre:</strong> Mónica Liliana García Herrera<br>
+        <strong>Parentesco:</strong> Prima<br>
+        <strong>Contacto:</strong> 3188660157</p>
+
+        <h3>Referencias personales:</h3>
+        <p><strong>Nombre:</strong> Eduardo Mendoza<br>
+        <strong>Cargo:</strong> Dinamizador Tecnoparque<br>
+        <strong>Contacto:</strong> 3217475078</p>
+
+        <p><strong>Nombre:</strong> Eduardo José Becerra<br>
+        <strong>Cargo:</strong> Partner Odoo<br>
+        <strong>Contacto:</strong> 3015699914</p>
+    </div>
+
+    <!-- Menú de navegación -->
+    <div class="menu">
+        <select onchange="location = this.value;">
+            <option value="/">Información</option>
+            <option value="/estudios">Estudios</option>
+            <option value="/experiencia">Experiencia</option>
+            <option value="/referencias" selected>Referencias</option>
+        </select>
+    </div>
+
+</body>
+</html>

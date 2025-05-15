@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Información Personal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <!-- Perrito, aquí va el nombre del socio -->
+    <h1>David Monsalve Herrera</h1>
+
+    <!-- Socio, aquí se pone la foto -->
+    <div style="text-align:center;">
+        <img src="{{ url_for('static', filename='img/david.jpg') }}" alt="Foto de perfil" width="150">
+    </div>
+
+    <!-- Aquí va una mini descripción pa' que el que lea sepa quién es -->
+    <div class="info-box">
+        <p><strong>Correo:</strong> redsocialgedeon@gmail.com</p>
+        <p><strong>Dirección:</strong> Calle 12 No. 21-12 Barrio Garupal</p>
+        <p><strong>Contacto:</strong> 3042786614</p>
+        <p><strong>Redes sociales:</strong> x: @JGarupal</p>
+        <p><strong>Fecha nacimiento:</strong> 07/09/1979</p>
+        <p><strong>Tipo de sangre:</strong> O+</p>
+    </div>
+
+    <!-- El menú pa' navegar entre las otras secciones -->
+    <div class="menu">
+        <select onchange="location = this.value;">
+            <option value="/">Información</option>
+            <option value="/estudios">Estudios</option>
+            <option value="/experiencia">Experiencia</option>
+            <option value="/referencias">Referencias</option>
+        </select>
+    </div>
+
+</body>
+</html>
